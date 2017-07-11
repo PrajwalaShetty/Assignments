@@ -1,0 +1,82 @@
+Hashmap Example
+
+package hashmapex;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
+
+public class HashMapex {
+
+    public static void main(String[] args) {
+        
+        HashMap<Integer,String> emp = new HashMap<Integer,String>();
+        
+        emp.put(100,"Pushkar");
+        emp.put(101,"Pushpa");
+        emp.put(102,"Bhaskor");
+        emp.put(103,"Piku");
+        emp.put(104,"Bindu");
+        
+        Set entrySet = emp.entrySet();
+        
+       Iterator itr =  entrySet.iterator();
+       
+        System.out.println("HashMap Key-Value Pairs : ");
+       while(itr.hasNext()){
+             Map.Entry me = (Map.Entry)itr.next();
+             System.out.println("Id is: "+me.getKey() + 
+              " & " + 
+              " Name is: "+me.getValue());
+       }
+    emp.remove(103);
+        System.out.println("After removing "+emp);
+        
+        emp.replace(102, "Vidya");
+         System.out.println("After replacing "+emp);
+        
+}
+=========================================================================================================================================================================
+Q2
+
+
+
+
+package hashmapex;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
+
+public class HashMapex {
+
+    public static void main(String[] args) {
+        
+        HashMap<Integer,String> emp = new HashMap<Integer,String>();
+        
+        emp.put(100,"Pushkar");
+        emp.put(101,"Pushpa");
+        emp.put(102,"Bhaskor");
+        emp.put(103,"Piku");
+        emp.put(104,"Bindu");
+        
+        Set entrySet = emp.entrySet();
+        
+       Iterator itr =  entrySet.iterator();
+       
+        System.out.println("HashMap Key-Value Pairs : ");
+       while(itr.hasNext()){
+             Map.Entry me = (Map.Entry)itr.next();
+             System.out.println("Id is: "+me.getKey() + 
+              " & " + 
+              " Name is: "+me.getValue());
+       }
+    emp.remove(103);
+        System.out.println("After removing "+emp);
+        
+        emp.replace(102, "Vidya");
+         System.out.println("After replacing "+emp);
+        
+}
